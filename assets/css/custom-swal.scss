@@ -1,0 +1,68 @@
+.custom-swal-popup {
+  width: 32em !important;  
+  height: auto !important;  
+}
+
+.custom-swal-title {
+  font-size: 1.5em; 
+}
+
+.custom-swal-content {
+  font-size: 1.2em;  
+}
+
+.custom-swal-actions {
+  margin-top: 20px;  
+}
+
+.custom-swal-confirm,
+.custom-swal-cancel {
+  padding: 10px 20px;  
+  font-size: 1em;  
+}
+.swal2-popup {
+  border-radius: 10px !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) !important;
+  width: 45vw !important;
+  height: 150px !important;
+}
+
+/* title: 'custom-swal-title',
+        content: 'custom-swal-content',
+        actions: 'custom-swal-actions',
+        confirmButton: 'custom-swal-confirm',
+        cancelButton: 'custom-swal-cancel
+
+
+        '
+      title: 'You are about to be logged out',
+
+
+
+      text: 'You have been idle for a while. Click "Stay Logged In" to remain logged in.',
+
+
+customClass: {
+  container: '...',
+  popup: '...',
+  header: '...',
+  title: '...',
+  closeButton: '...',
+  icon: '...',
+  image: '...',
+  htmlContainer: '...',
+  input: '...',
+  inputLabel: '...',
+  validationMessage: '...',
+  actions: '...',
+  confirmButton: '...',
+  denyButton: '...',
+  cancelButton: '...',
+  loader: '...',
+  footer: '....',
+  timerProgressBar: '....',
+}
+
+      
+
+        */
