@@ -10,7 +10,8 @@ const authStore = useAuthStore()
 
 
 export const useIdleTimer = () => {
-  const { idle } = useIdle(5 * 60 * 1000)
+  // use 5 * 60 * 1000 (5 min)  6000 is just for demo
+  const { idle } = useIdle(6000)
 
   const showAlert = () => {
     Swal.fire({
@@ -35,8 +36,8 @@ export const useIdleTimer = () => {
       willClose: () => {
         // Log out the user if the dialog is closed due to the timer running out
         if (Swal.getTimerLeft() === 0) {
-          // logout()
-          alert('Log out')
+          logout()
+          // alert('Log out')
         }
       }
     })
@@ -45,18 +46,18 @@ export const useIdleTimer = () => {
       if (result.isConfirmed) {
         idle.value = false
       } else if (result.dismiss === Swal.DismissReason.timer) {
-        // logout()
-        alert('Log out')
+        logout()
+        // alert('Log out')
       } else {
-        // logout()
-        alert('Log out....')
+        logout()
+        // alert('Log out....')
       }
     })
   }
 
   const logout = () => {
     authStore.removeToken()
-    useRouter.push('/auth')
+    useRouter().push('/auth')
   }
 
   watch(idle, (isIdle) => {

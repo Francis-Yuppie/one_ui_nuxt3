@@ -18,4 +18,6 @@ onMounted(() => {
 
 <style lang="scss">
 	@import "@/assets/scss/main";
+	@import "@/assets/css/custom-swal";
+
 </style>

@@ -16,11 +16,6 @@ const showAlert = () => {
 </template>
 
 <style scoped>
-.swal2-popup {
-  border-radius: 10px !important;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) !important;
-  width: 45vw !important;
-  height: 150px !important;
-}
+
 </style>
   

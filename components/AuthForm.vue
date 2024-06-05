@@ -43,13 +43,11 @@ const onSubmit = async () => {
 
           //@ts-ignore
            authStore.setToken(response.dataPayload.data.token, response.dataPayload.data.username);
-          useRouter().push("/backend/DashboardView");
+           useRouter().push("/backend/");
       })
       .catch((err) => {
           console.error(err)
       });
-
-
 
     } catch (error) {
       console.error(error);
