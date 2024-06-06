@@ -38,6 +38,7 @@
     "chart.js": "^4.4.0",
     "dropzone": "^6.0.0-beta.2",
     "highlight.js": "^11.9.0",
+    "jspreadsheet-ce": "^4.2.1",
     "nprogress": "^0.2.0",
     "nuxt": "^3.10.2",
     "nuxt-sweetalert2": "^1.0.0",
